@@ -1,6 +1,5 @@
 # {{titlecase name}}
 
-![Dependencies](https://img.shields.io/librariesio/github/{{owner}}/{{name}}.svg)
 ![Issues](https://img.shields.io/github/issues/{{owner}}/{{name}}.svg)
 ![Release](https://img.shields.io/github/release/{{owner}}/{{name}}.svg)
 
