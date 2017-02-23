@@ -1,7 +1,8 @@
 # {{titlecase name}}
 
-[![Build Status](https://travis-ci.org/{{owner}}/{{name}}.svg?branch=master)](https://travis-ci.org/{{owner}}/{{name}})
-[![NPM version](https://img.shields.io/npm/v/{{name}}.svg)](https://www.npmjs.com/package/{{name}})
+![Dependencies](https://img.shields.io/librariesio/github/{{owner}}/{{name}}.svg)
+![Issues](https://img.shields.io/github/issues/{{owner}}/{{name}}.svg)
+![Release](https://img.shields.io/github/release/{{owner}}/{{name}}.svg)
 
 {{description}}
 
