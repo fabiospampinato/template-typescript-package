@@ -1,0 +1,43 @@
+{
+  "name": "{{#scoped}}@{{owner}}/{{/scoped}}{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "clean:coverage": "rimraf coverage .nyc_output",
+    "clean": "npm run clean:dist && npm run clean:coverage",
+    "precompile": "npm run clean:dist",
+    "compile": "tsc --skipLibCheck",
+    "lint": "tslint \"src/**/*.ts*\" --force",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "coverage": "nyc --reporter=html ava",
+    "report": "nyc report",
+    "report:html": "open coverage/index.html",
+    "prepublish": "npm run clean && npm run lint && npm run compile && npm run coverage"
+  },
+  "bugs": {
+    "url": "https://github.com/{{owner}}/{{name}}/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "{{author}}",
+    "email": "{{email}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{{owner}}/{{name}}.git"
+  },
+  "keywords": [],
+	"dependencies": {},
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "ava-spec": "^1.1.0",
+    "nyc": "^10.1.2",
+    "rimraf": "^2.6.0",
+    "tslint": "^4.4.2",
+    "typescript": "~2.2.0"
+  }
+}
