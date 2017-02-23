@@ -1,7 +1,7 @@
 # {{titlecase name}}
 
 ![Issues](https://img.shields.io/github/issues/{{owner}}/{{name}}.svg)
-![Release](https://img.shields.io/github/release/{{owner}}/{{name}}.svg)
+[![NPM version](https://img.shields.io/npm/v/{{#scoped}}@{{owner}}/{{/scoped}}{{name}}.svg)](https://www.npmjs.com/package/{{#scoped}}@{{owner}}/{{/scoped}}{{name}})
 
 {{description}}
 
