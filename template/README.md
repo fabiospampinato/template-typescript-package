@@ -9,7 +9,7 @@
 ## Install
 
 ```shell
-$ npm install --save {{name}}
+$ npm install --save {{#scoped}}@{{owner}}/{{/scoped}}{{name}}
 ```
 
 ## Usage
