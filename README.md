@@ -15,7 +15,7 @@ $ khaos install fabiospampinato/khaos-typescript-package typescript-package
 Create a new typescript package with:
 
 ```
-$ khaos typescript-package my-package
+$ khaos create typescript-package my-package
 ```
 
 ## License
