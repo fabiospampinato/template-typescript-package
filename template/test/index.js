@@ -3,9 +3,9 @@
 
 import {describe} from 'ava-spec';
 
-/* {{uppercase name}} */
+/* {{_ "toUpper" name}} */
 
-describe ( '{{titlecase name}}', it => {
+describe ( '{{_ "startCase" name}}', it => {
 
   it ( 'Does something', t => {
 

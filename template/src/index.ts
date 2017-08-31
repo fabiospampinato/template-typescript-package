@@ -1,8 +1,8 @@
 
-/* {{uppercase name}} */
+/* {{_ "toUpper" name}} */
 
-const {{camelcase name}} = {};
+const {{_ "camelCase" name}} = {};
 
 /* EXPORT */
 
-export default {{camelcase name}};
+export default {{_ "camelCase" name}};

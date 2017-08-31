@@ -1,4 +1,4 @@
-# {{titlecase name}}
+# {{_ "startCase" name}}
 
 ![Issues](https://img.shields.io/github/issues/{{owner}}/{{name}}.svg)
 [![NPM version](https://img.shields.io/npm/v/{{#scoped}}@{{owner}}/{{/scoped}}{{name}}.svg)](https://www.npmjs.com/package/{{#scoped}}@{{owner}}/{{/scoped}}{{name}})
@@ -14,9 +14,9 @@ $ npm install --save {{#scoped}}@{{owner}}/{{/scoped}}{{name}}
 ## Usage
 
 ```js
-import {{camelcase name}} from '{{#scoped}}@{{owner}}/{{/scoped}}{{name}}';
+import {{_ "camelCase" name}} from '{{#scoped}}@{{owner}}/{{/scoped}}{{name}}';
 
-{{camelcase name}} () // result
+{{_ "camelCase" name}} (); // result
 ```
 
 ## License

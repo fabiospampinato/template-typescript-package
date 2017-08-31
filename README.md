@@ -1,13 +1,13 @@
-# khaos-typescript-package
+# template-typescript-package
 
-A Khaos template for starting a new typescript package quickly.
+A template for starting a new typescript package quickly.
 
 ## Install
 
-Save the template locally with:
+Install the template locally with:
 
 ```
-$ khaos install fabiospampinato/khaos-typescript-package typescript-package
+$ template install fabiospampinato/template-typescript-package typescript-package
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ khaos install fabiospampinato/khaos-typescript-package typescript-package
 Create a new typescript package with:
 
 ```
-$ khaos create typescript-package my-package
+$ template create typescript-package my-package
 ```
 
 ## License
