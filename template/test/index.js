@@ -3,7 +3,7 @@
 
 import {describe} from 'ava-spec';
 
-/* {{_ "toUpper" name}} */
+/* {{_ "upperCase" name}} */
 
 describe ( '{{_ "startCase" name}}', it => {
 

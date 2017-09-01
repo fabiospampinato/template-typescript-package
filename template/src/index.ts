@@ -1,5 +1,5 @@
 
-/* {{_ "toUpper" name}} */
+/* {{_ "upperCase" name}} */
 
 const {{_ "camelCase" name}} = {};
 
