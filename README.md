@@ -7,7 +7,7 @@ A template for starting a new typescript package quickly.
 Install the template locally with:
 
 ```
-$ template install fabiospampinato/template-typescript-package typescript-package
+template install fabiospampinato/template-typescript-package typescript-package
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ template install fabiospampinato/template-typescript-package typescript-packag
 Create a new typescript package with:
 
 ```
-$ template create typescript-package my-package
+template create typescript-package my-package
 ```
 
 ## License
