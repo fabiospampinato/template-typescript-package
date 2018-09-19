@@ -10,7 +10,7 @@ npm install --save {{#scoped}}@{{owner}}/{{/scoped}}{{name}}
 
 ## Usage
 
-```js
+```ts
 import {{_ "camelCase" name}} from '{{#scoped}}@{{owner}}/{{/scoped}}{{name}}';
 
 {{_ "camelCase" name}} (); // result
