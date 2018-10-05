@@ -5,4 +5,4 @@ const {{_ "camelCase" name}} = {};
 
 /* EXPORT */
 
-export default {{_ "camelCase" name}};
+export = Object.assign ( {{_ "camelCase" name}}, { default: {{_ "camelCase" name}} } );
