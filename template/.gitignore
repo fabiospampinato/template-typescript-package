@@ -35,5 +35,6 @@ Thumbs.db
 # Other paths to ignore
 bower_components
 node_modules
+dist
 .nyc_output
 coverage
