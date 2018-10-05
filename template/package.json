@@ -35,7 +35,9 @@
     "type": "git",
     "url": "https://github.com/{{owner}}/{{name}}.git"
   },
-  "keywords": [],
+  "keywords": [
+    "//TODO"
+  ],
 	"dependencies": {},
   "devDependencies": {
     "@types/node": "^10.9.4",
