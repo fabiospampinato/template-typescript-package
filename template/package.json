@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    {{#if with-tests}}
     "clean:dist": "rimraf dist",
     "clean:coverage": "rimraf coverage .nyc_output",
     "clean": "npm run clean:dist && npm run clean:coverage",
@@ -17,12 +18,21 @@
     "report": "nyc report",
     "report:html": "open coverage/index.html",
     "prepublish": "npm run clean && npm run lint && npm run compile && npm run coverage"
+    {{else}}
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "lint": "tslint \"src/**/*.ts*\" --force",
+    "prepublish": "npm run clean && npm run lint && npm run compile"
+    {{/if}}
   },
+  {{#with-tests}}
   "ava": {
     "files": [
       "test/index.js"
     ]
   },
+  {{/with-tests}}
   "bugs": {
     "url": "https://github.com/{{owner}}/{{name}}/issues"
   },
@@ -41,9 +51,11 @@
 	"dependencies": {},
   "devDependencies": {
     "@types/node": "^10.9.4",
+    {{#with-tests}}
     "ava": "^0.18.2",
     "ava-spec": "^1.1.0",
     "nyc": "^10.1.2",
+    {{/with-tests}}
     "rimraf": "^2.6.0",
     "tslint": "^4.4.2",
     "typescript": "^3.0.3"

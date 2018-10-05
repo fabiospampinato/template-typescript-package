@@ -36,5 +36,7 @@ Thumbs.db
 bower_components
 node_modules
 dist
+{{#with-tests}}
 .nyc_output
 coverage
+{{/with-tests}}
