@@ -35,6 +35,7 @@ Thumbs.db
 # Other paths to ignore
 bower_components
 node_modules
+package-lock.json
 dist
 {{#with-tests}}
 .nyc_output
