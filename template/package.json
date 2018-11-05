@@ -16,12 +16,12 @@
     "coverage": "nyc --reporter=html ava",
     "report": "nyc report",
     "report:html": "open coverage/index.html",
-    "prepublish": "npm run clean && npm run compile && npm run coverage"
+    "prepublishOnly": "npm run clean && npm run compile && npm run coverage"
     {{else}}
     "clean": "rimraf dist",
     "compile": "tsc --skipLibCheck",
     "compile:watch": "tsc --skipLibCheck --watch",
-    "prepublish": "npm run clean && npm run compile"
+    "prepublishOnly": "npm run clean && npm run compile"
     {{/if}}
   },
   {{#with-tests}}
