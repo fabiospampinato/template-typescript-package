@@ -9,7 +9,7 @@
     "clean:dist": "rimraf dist",
     "clean:coverage": "rimraf coverage .nyc_output",
     "clean": "npm run clean:dist && npm run clean:coverage",
-    "compile": "tsc --skipLibCheck",
+    "compile": "tsc --skipLibCheck && tstei",
     "compile:watch": "tsc --skipLibCheck --watch",
     "test": "ava",
     "test:watch": "ava --watch",
@@ -19,7 +19,7 @@
     "prepublishOnly": "npm run clean && npm run compile && npm run coverage"
     {{else}}
     "clean": "rimraf dist",
-    "compile": "tsc --skipLibCheck",
+    "compile": "tsc --skipLibCheck && tstei",
     "compile:watch": "tsc --skipLibCheck --watch",
     "prepublishOnly": "npm run clean && npm run compile"
     {{/if}}
@@ -55,6 +55,7 @@
     "nyc": "^10.1.2",
     {{/with-tests}}
     "rimraf": "^2.6.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "typescript-transform-export-interop": "^1.0.0"
   }
 }
