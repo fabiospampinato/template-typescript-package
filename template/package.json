@@ -46,7 +46,7 @@
   "keywords": [
     "//TODO"
   ],
-	"dependencies": {},
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.9.4",
     {{#with-tests}}
