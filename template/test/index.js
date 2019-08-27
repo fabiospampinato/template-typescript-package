@@ -7,7 +7,7 @@ import {describe} from 'ava-spec';
 
 describe ( '{{_ "startCase" name}}', it => {
 
-  it ( 'Does something', t => {
+  it ( 'works', t => {
 
     t.true ( false );
 
