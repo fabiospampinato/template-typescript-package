@@ -17,3 +17,5 @@ benchmark ({
     //TODO
   }
 });
+
+benchmark.summary ();
