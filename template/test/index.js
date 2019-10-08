@@ -2,6 +2,7 @@
 /* IMPORT */
 
 import {describe} from 'ava-spec';
+import {default as {{_ "camelCase" name}} from '../dist';
 
 /* {{_ "upperCase" name}} */
 
