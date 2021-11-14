@@ -1,10 +1,10 @@
 
 /* IMPORT */
 
-const {default: {{_ "camelCase" name}} = require ( '../dist' ),
-      benchmark = require ( 'benchloop' );
+const {default: {{_ "camelCase" name}} = require ( '../dist' );
+const benchmark = require ( 'benchloop' );
 
-/* BENCHMARK */
+/* MAIN */
 
 benchmark.defaultOptions = Object.assign ( benchmark.defaultOptions, {
   iterations: 100,

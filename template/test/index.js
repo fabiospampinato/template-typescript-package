@@ -1,10 +1,10 @@
 
 /* IMPORT */
 
-import {describe} from 'ava-spec';
-import {default as {{_ "camelCase" name}} from '../dist';
+const {describe} = require ( 'fava' );
+const {default: {{_ "camelCase" name}} = require ( '../dist' );
 
-/* {{_ "upperCase" name}} */
+/* MAIN */
 
 describe ( '{{_ "startCase" name}}', it => {
 
