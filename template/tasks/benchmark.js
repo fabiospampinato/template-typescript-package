@@ -1,8 +1,8 @@
 
 /* IMPORT */
 
-const {default: {{_ "camelCase" name}} = require ( '../dist' );
-const benchmark = require ( 'benchloop' );
+import benchmark from 'benchloop';
+import {{_ "camelCase" name}} from '../dist';
 
 /* MAIN */
 

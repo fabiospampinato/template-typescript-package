@@ -1,53 +1,42 @@
 {
   "name": "{{#scoped}}@{{owner}}/{{/scoped}}{{name}}",
+  "repository": "github:{{owner}}/{{name}}",
   "description": "{{description}}",
   "version": "{{version}}",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     {{#with-benchmark}}
-    "benchmark": "node tasks/benchmark.js",
+    "benchmark": "tsex benchmark",
+    "benchmark:watch": "tsex benchmark --watch",
     {{/with-benchmark}}
     {{#if with-tests}}
-    "clean": "rimraf dist",
-    "compile": "tsc --skipLibCheck && tstei",
-    "compile:watch": "tsc --skipLibCheck --watch",
-    "test": "fava",
-    "test:watch": "fava -w",
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
+    "test": "tsex test",
+    "test:watch": "tsex --watch",
     "prepublishOnly": "npm run clean && npm run compile && npm run test"
     {{else}}
-    "clean": "rimraf dist",
-    "compile": "tsc --skipLibCheck && tstei",
-    "compile:watch": "tsc --skipLibCheck --watch",
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
     "prepublishOnly": "npm run clean && npm run compile"
     {{/if}}
-  },
-  "bugs": {
-    "url": "https://github.com/{{owner}}/{{name}}/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "{{author}}",
-    "email": "{{email}}"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/{{owner}}/{{name}}.git"
   },
   "keywords": [
     "//TODO"
   ],
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^16.11.7",
     {{#with-benchmark}}
     "benchloop": "^1.3.2",
     {{/with-benchmark}}
     {{#with-tests}}
-    "fava": "^0.0.4",
+    "fava": "^0.0.5",
     {{/with-tests}}
-    "rimraf": "^3.0.2",
-    "typescript": "^4.4.4",
-    "typescript-transform-export-interop": "^1.0.4"
+    "tsex": "^1.0.0",
+    "typescript": "^4.6.3"
   }
 }

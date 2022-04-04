@@ -1,8 +1,8 @@
 
 /* IMPORT */
 
-const {describe} = require ( 'fava' );
-const {default: {{_ "camelCase" name}} = require ( '../dist' );
+import {describe} from 'fava';
+import {{_ "camelCase" name}} from '../dist';
 
 /* MAIN */
 
