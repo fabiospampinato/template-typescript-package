@@ -2,7 +2,7 @@
 /* IMPORT */
 
 import benchmark from 'benchloop';
-import {{_ "camelCase" name}} from '../dist';
+import {{_ "camelCase" name}} from '../dist/index.js';
 
 /* MAIN */
 
