@@ -17,13 +17,16 @@
       "type": "string"
     },
     "scoped": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "tested": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "benchmarked": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     }
   }
 }
