@@ -1,12 +1,10 @@
 # template-typescript-package
 
-A template for starting a new typescript package quickly.
+A template for creating a new TypeScript package quickly.
 
 ## Install
 
-Install the [`template`](https://github.com/fabiospampinato/template) CLI tool in your system.
-
-Install the template locally with:
+Install [`template`](https://github.com/fabiospampinato/template), then install this template with:
 
 ```sh
 template install fabiospampinato/template-typescript-package typescript-package
@@ -14,10 +12,10 @@ template install fabiospampinato/template-typescript-package typescript-package
 
 ## Usage
 
-Create a new typescript package with:
+Create a new TypeScript package with:
 
 ```sh
-template create typescript-package my-package
+template new typescript-package my-package
 ```
 
 ## License

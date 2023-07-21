@@ -2,15 +2,15 @@
 /* IMPORT */
 
 import {describe} from 'fava';
-import {{_ "camelCase" name}} from '../dist/index.js';
+import {{_.camelCase ( name )}} from '../dist/index.js';
 
 /* MAIN */
 
-describe ( '{{_ "startCase" name}}', it => {
+describe ( '{{_.startCase ( name )}}', it => {
 
   it ( 'works', t => {
 
-    t.true ( false );
+    //TODO
 
   });
 

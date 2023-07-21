@@ -36,6 +36,3 @@ Thumbs.db
 bower_components
 node_modules
 package-lock.json
-.nyc_output
-coverage
-typings

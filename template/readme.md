@@ -1,19 +1,19 @@
-# {{_ "startCase" name}}
+# {{_.startCase ( name )}}
 
 {{description}}
 
 ## Install
 
 ```sh
-npm install --save {{#scoped}}@{{owner}}/{{/scoped}}{{name}}
+npm install --save {{#if scoped}}@{{owner}}/{{/if}}{{name}}
 ```
 
 ## Usage
 
 ```ts
-import {{_ "camelCase" name}} from '{{#scoped}}@{{owner}}/{{/scoped}}{{name}}';
+import {{_.camelCase ( name )}} from '{{#if scoped}}@{{owner}}/{{/if}}{{name}}';
 
-{{_ "camelCase" name}} (); // result
+//TODO
 ```
 
 ## License
